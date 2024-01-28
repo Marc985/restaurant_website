@@ -1,0 +1,116 @@
+nav{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1%;
+    width: 100%;
+    box-shadow: 5px 1px 20px gray;
+      position: fixed;
+    top: 0%;
+    z-index: 1;
+color: white;
+background-color: rgba(26, 25, 25, 0.892);
+
+
+}
+
+.logo{
+
+}
+nav img{
+   width: 35px;
+   height: 35px;
+  
+}
+
+nav ul{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    margin-top: 1%;
+}
+.verre_texte{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+}
+.Flavors{
+    font-size: 20px;
+    font-family: Arial, Helvetica;
+   margin-top: 5%;
+}
+.nav_bar{
+    display: none;
+}
+
+.contact{
+    width: 150px;
+    height: 50px;
+    background-color: #F56706;
+    border-radius: 10PX;
+    border: none;
+    margin-bottom: 0.9%;
+    font-size: 25px;
+    margin-top: 0.5%;
+    padding-bottom: 0.6vh;
+    transition: 0.8s;
+
+}
+.contact:hover{
+    box-shadow: 0 0 15px 5px #F56706;
+}
+nav li{
+    position: relative;
+
+  
+}
+nav li::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: 1s;
+    top: -30%;
+    left: 0;
+    opacity: 0;
+
+}
+
+
+nav li:hover::before{
+    top: 0;
+    opacity: 1;
+}
+
+
+
+
+
+@media screen and (max-width:700px){
+   .verre_texte{
+    display: none;
+   }
+    nav{
+           box-shadow: none;
+           background-color: none;
+       }
+       nav ul{
+           display: none;
+       } 
+       nav ul:target{
+           display: block;
+       }
+       .nav_bar{
+           display: flex;
+           flex-direction: row;
+           gap: 10vw;
+       justify-content: right;
+       }
+       .contact{
+        display: none;
+       }
+      
+    }   

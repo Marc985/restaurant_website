@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Cambria, Cochin, Georgia;
+    text-decoration: none;
+    list-style: none;
+    font-size: large;
+color: inherit;
+
+}
+.book_table{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vh;
+}
+.info_user{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+h1{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(255, 149, 0);
+    padding-top: 17vh;
+}
+.book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    margin-top: 3vh;
+}
+label{
+    color: rgb(56, 54, 54);
+}
+input[type="time"]::-webkit-calendar-picker-indicator ,
+input[type="date"]::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+  }
+
+input,select{
+    width: 30vw;
+    height: 6vh;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding-left: 3%;
+    background-color: rgb(71, 69, 65);
+    color: white;
+}
+.note{
+    display: flex;
+    flex-direction: column;
+}
+.note input{
+    width: 61vw;
+    height: 15vh;
+    padding-bottom: 8%;
+}
+.envoyer{
+    width: 7vw;
+    padding-left: 0;
+    height: 5vh;
+    margin-right: 54%;
+}
+@media screen and (max-width:1000px){
+
+.info_user{
+    flex-direction: column;
+}
+input,select{
+    width: 100%;
+}
+
+.book_table{
+    width: 90vw;
+    
+}
+.note input{
+    width: 90vw;
+}
+.envoyer{
+    width: 26vw;
+    height: 5vh;
+    margin-right: -54%;
+}
+}

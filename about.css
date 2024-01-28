@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Cambria, Cochin, Georgia;
+    text-decoration: none;
+    list-style: none;
+    font-size: large;
+color: inherit;
+font-family: 'police';
+}
+.our_story{
+font-size: 35px;
+    margin-bottom:2.5vh;
+    width: 600px;
+}
+@font-face{
+    font-family: 'police';
+    src: url('police/poppins-Light.ttf') format('truetype');
+}
+
+
+
+.section1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5vw;
+    padding-top: 20vh;
+}
+.our_story_img{
+    width: 500px;
+    height: 400px;
+}
+.our_story_text{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.our_story_title{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 3vh;
+}
+.shef_image{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+.shef_image2{
+   display: flex;
+   flex-direction: column;
+   gap: 2vh;
+}
+.section2{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
+}
+.our_goal_txt{
+    width: 40vw;
+    margin: 5vh 0;
+}
+.goal_title{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 3vh;
+
+}
+@media screen and (max-width:700px){
+.section1{
+    flex-direction: column;
+}
+.our_story_img,.our_story_txt{
+    width: 90%;
+    margin: 0 auto;
+}
+.shef_image{
+    height: 60vh;
+}
+.shef_image2{
+    gap: 0.5vh;
+}
+.shef_image2 img{
+    height: 29.8vh;
+    width: 49vw;
+}
+.our_goal_txt{
+    width: 90%;
+}
+.our_story{
+    width: 90%;
+}
+.first_image{
+    width: 49vw;
+}
+}

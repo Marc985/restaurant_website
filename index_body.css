@@ -1,0 +1,548 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    font-size: large;
+color: inherit;
+font-family: 'police';
+
+}
+@font-face{
+    font-family: 'police';
+    src: url('police/poppins-Light.ttf') format('truetype');
+}
+.text1{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    height: 500px;
+  
+}
+.container_image img{
+    width: 25%;
+    height: 400px;
+    float: left;
+}
+.container{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    margin-top: 3vh;
+    position: relative;
+    border: #00311E 6px solid;
+    box-shadow: 5px 5px 10px  black -5px -5px -10px black;
+    overflow: hidden;
+background-position: center center;
+background-size: cover;
+}
+.container_image{
+   width: 400%;
+   height: 400px;
+   position: absolute;
+   left: 0%;
+   animation: move 15s linear infinite alternate-reverse  forwards;
+
+   }
+@keyframes move {
+    0%{
+        left: 0%;
+    }
+    15%{
+        left: 0%;
+    }
+    30%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+
+    60%{
+        left: -200%;
+    }
+    75%{
+        left: -200%;
+    }    
+    85%{
+        left: -300%;
+    }
+    100%{
+        left: -300%;
+   
+}
+}
+
+.first_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    padding-top: 15vh;
+    
+    
+    
+}
+.text1 h1{
+    font-size: 40px;
+    font-family: Verdana, Geneva;
+    font-weight: lighter;
+}
+.text1 button{
+border: none;
+border-radius: 10px;
+padding: 2vh 2vw;
+}
+.explore_menu{
+    background-color:#F56706;
+    color: white;
+    font-size: 23px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60%;
+    
+}
+.table{
+    background:none;
+    color: #F56706;
+    font-size: 23px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+}
+
+.icone img{
+    width: 3vw;
+    height: 5vh;
+   
+    
+}
+
+.icone{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    justify-content: center;
+    padding-top: 8%;
+}
+
+
+.icone>div{
+    width: 180px;
+    height: 200px;
+background-color: rgb(221, 221, 221);
+    border-radius: 20px;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+
+   
+}
+.call{
+    color: rgb(107, 106, 106);
+}
+.conteneur{
+    position: relative;
+   height: 550px;
+    width: 300px;
+    align-items: center;
+    
+}
+.special_dish{
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    position: absolute;
+    top: -20%;
+    left: 20%;
+    z-index: 1;
+    
+    
+}
+
+.stars{
+    width: 7vw;
+    height: 3vh;
+    filter: sepia(100%) saturate(700%) hue-rotate(-40deg);
+
+}
+.special_dish_detail{
+    background-color: white;
+    box-shadow: inset 8px 8px 4px rgb(239, 234, 234),inset -8px -8px 4px rgb(246, 244, 244) ;
+    border-top: #F56706 10px solid;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 15px;
+    padding-top: 9vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.top_dish_section{
+    background: url(image/background_demo.jpg);
+    backdrop-filter: blur(1000px);
+    background-position: center center;
+    background-size: cover;
+    height:1000px ;
+    width: 100%;
+    margin-top: 100px;
+    background-attachment: fixed;
+
+}
+
+.section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 25vh;
+    gap:50px;
+    
+}
+.our_special{
+    width: 17vw;
+    padding-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+.our_special_title{
+    font-size: 27px;
+    font-family: Verdana;
+}
+.book_button{
+    background-color: #F56706;
+    border: none;
+   width: 12vw;
+    padding: 2vh 0vw;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    
+    
+}
+.conteneur:hover{
+    transform: scale(1.1);
+}
+.potato{
+    font-size: 27px;
+    font-family: 'Segoe UI', Tahoma;
+    font-weight: bold;
+}
+.prix{
+    color: #045f3c;
+    font-weight: bold;
+    
+}
+.top_dish_container{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.612);
+    backdrop-filter: blur(10px);
+    width: 450px;
+    padding: 2vh 1vw;
+    border-radius: 15px;
+    gap: 1vw;
+
+}
+
+
+.top_dish_image{
+    width: 200px;
+    height: 150px;
+    border-radius: 15px;
+    }
+.vegan_salad{
+    font-size: 26px;
+    font-weight: bold;
+    font-family: Verdana, Geneva;
+    width: 150px;
+}
+
+
+.top_cont{
+    display: flex;
+    flex-direction: row;
+}
+.top_dish_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.top_dish_title{
+    text-align: center;
+    color:white;
+
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 10vh;
+    padding-bottom: 3vh;
+}
+.demo_dish{
+    display: flex;
+    flex-direction: row;
+    gap:2vw;
+    background-color: rgba(255, 255, 255, 0.612);
+    backdrop-filter: blur(10px);
+    width: 1070px;
+    padding: 3vh 3vh;
+    border-radius: 15px;
+   margin: 0 auto;
+   position: relative;
+  
+}
+.demo_dish1{
+    margin-top: 8%;
+}
+.demo_dish::before,.demo_dish::after{
+position: absolute;
+content: '';
+width: 50%;
+
+background: black;
+}
+
+.section3_image{
+    width: 250px;
+    height: 350px;
+    border-radius: 15px;
+}
+.section3{
+padding-top: 10%;
+display: none;
+
+}
+.off_20{
+    color: #0c764d;
+}
+.demo_dish_discount{
+    font-size: 36px;
+    font-weight: bold;
+}
+.book_button2{
+    background-color: #F56706;
+    border-radius: 10px;
+    padding: 2vh 3%;
+    margin-right: 8vw;
+    margin-left: 0;
+    color: white;
+    font-weight: 100;
+    border: none;
+    width: 150px;
+}
+.demo_detail{
+    display: flex;
+    flex-direction: column;
+    gap:1vh;
+    width: 150px;
+    
+}
+
+.section4{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    justify-content: center;
+}
+.section4 img{
+    height: 70vh;
+    padding-top: 10%;
+    
+}
+.section4 :first-child{
+    width: 40%;
+    filter: hue-rotate(5deg);
+}
+.section4 :last-child{
+    width: 20%;
+}
+.section5_text{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    padding-top: 3%;
+}
+.section5{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3%;
+    padding-top: 10vh;
+ 
+}
+.icone_5{
+    background-color: gainsboro;
+    width: 150px;
+    height: 150px;
+    margin-top: 4%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section5_icone{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4%;
+    justify-content: center;
+    border-radius: 10px;
+}
+.section5_title{
+  
+    font-size: 35px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:700px) {
+    .first_section{
+       flex-direction: column;
+       gap: 10vh;
+    }
+    .text1{
+       width: 300px;
+       margin: 0 auto;
+    }
+    .container{
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 150px;
+    }
+
+    .icone{
+       flex-direction: column;
+       gap: 2vh;
+    }
+    .icone img{
+        width: 35%;
+        height: 35%;
+}
+.icone>div{
+    width: 50%;
+    height: 250px;
+     margin: 0 auto;
+    
+}
+.section2{
+    flex-direction: column;
+   gap: 25vh;
+    width: 100%;
+}
+.stars{
+    width: 20%;
+    height: 25%;
+    
+}
+.conteneur{
+    width: 71%;
+    left: 15%;
+
+}
+.special_dish_detail{
+    width: 70vw;
+}
+.special_dish{
+    width: 47vw;
+    left: 16%;
+}
+.our_special{
+    width: 300px;
+    margin: 0 auto;
+}
+.book_button{
+    width: 50%;
+    
+}
+.top_dish_list{
+    flex-direction: column;
+}
+.top_dish_container{
+    width: 300px;
+    margin: 0 auto;
+}
+.top_dish_image{
+    height: 20vh;
+}
+
+.vegan_salad{
+    width: 40vw;
+}
+.demo_dish{
+    flex-direction: column;
+    gap: 35%;
+    background-color: rgb(225, 219, 219);
+    width: 95%;
+    height: 110vh;
+    position: relative;
+}
+.demo_dish .section3_image{
+    width: 70%;
+    box-shadow: 5px 5px 7px black;
+    
+}
+
+.demo_detail button{
+  margin-right:  30vw;
+}
+.demo_dish1{
+    display: none;
+}
+.top_dish_image{
+    display: flex;
+    flex-direction: row;
+    gap: 6vw;
+
+}
+.top_dish_image :first-child{
+    width: 30%;
+}
+.top_dish_image{
+    width: 90%;
+}
+.section3{
+    display: flex;
+}
+.stars{
+    width: 40%;
+    height: 5vh;
+}
+.section4 img{
+    height: 40vh;
+}
+.section4 :first-child{
+    width: 70%;
+    
+}
+.section4:last-child{
+    width: 30%;
+}
+.section5{
+   flex-direction: column;
+}
+.section5_text{
+    width: 300px;
+    margin: 0 auto;
+}
+.section5_icone{
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+   }

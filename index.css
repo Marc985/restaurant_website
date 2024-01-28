@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+   text-decoration: none;
+    list-style: none;
+    font-size: large;
+color: inherit;
+
+}
+
+
+
+nav{
+   color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1%;
+    background-color: #262221a3;
+    width: 100%;
+    box-shadow: 5px 1px 20px black;
+    position: fixed;
+    z-index: 1;
+    height: 100px;
+
+  
+}
+.button_header{
+    width: 300;
+    position: relative;
+   
+}
+nav img{
+    width: 60px;
+    height: 60px;
+    filter: invert(100%);
+}
+nav ul{
+   
+  
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+   
+}
+nav li{
+    position: relative;
+    margin-top: 5%;
+
+  
+}
+nav li::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: 1s;
+    top: -30%;
+    left: 0;
+    opacity: 0;
+
+}
+
+
+nav li:hover::before{
+    top: 0;
+    opacity: 1;
+}
+.verre_texte{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+}
+.Flavors{
+    font-size: 20px;
+    font-family: Arial, Helvetica;
+    margin-top: 5%;
+   
+}
+
+.contact{
+    width: 150px;
+    height: 50px;
+    background-color: #F56706;
+    border-radius: 10PX;
+    border: none;
+    margin-bottom: 0.9%;
+    font-size: 25px;
+    margin-top: 0.5%;
+    padding-bottom: 0.6vh;
+    transition: 0.8s;
+    
+}
+.contact:hover{
+    box-shadow: 0 0 15px 5px #F56706;
+}
+.section0{
+    background: url(image/background_compressé.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 45vh;
+    padding-top: 55vh;
+}
+
+
+
+
+.welcome_container{
+    align-items: center;
+}
+
+.welcome{
+    text-align: center;
+    font-size: 60px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+    font-weight: lighter;
+    font-style: oblique;
+    position: relative;
+}
+
+.welcome_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+
+
+.book_table{
+ background-color: #00311E;
+ border: 3px white solid;
+border-radius: 10px;
+width: 300px;
+height: 70px;
+font-size: 28px;
+font-family: Verdana, Geneva;
+position: relative;
+z-index: 1;
+overflow: hidden;
+cursor: pointer;
+
+}
+
+.book_table::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #F56706;
+    border-radius: 0 0 70% 70%;
+    color: black;
+    z-index: 1;
+    transition: 1s;
+    z-index: -1;
+
+}
+.book_table:hover::before{
+    height: 200%;
+}
+.book{
+    display: flex;
+    justify-content: center;
+}
+.text_header{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+.nav_bar img{
+   
+    width: 28px;
+    height: 28px;
+   
+
+}
+
+.nav_bar{
+    display: none;
+}
+
+
+@media screen and (max-width:650px){
+ nav{
+        box-shadow: none;
+       
+    }
+    nav ul{
+        display: none;
+    } 
+    nav ul:target{
+        display: block;
+    }
+    .nav_bar{
+        display: flex;
+        flex-direction: row;
+        gap: 10vw;
+    justify-content: right;
+   
+    }
+  
+   
+ .button_header{
+    width: 90%;
+ }
+ .welcome{
+    margin-top: 8vh;
+    font-size: 40px;
+ }
+ .text_header{
+    font-size: 20px;
+ }
+ .book_table{
+    font-size: 15px;
+    width: 25vw;
+    height: 7vh;
+  
+ }
+.Flavors{
+    display: none;
+}
+.contact{
+   display: none;
+}
+.section0{
+    padding-bottom: 30vh;
+    width: 100%;
+}
+}
+
+

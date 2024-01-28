@@ -1,0 +1,146 @@
+/**{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Cambria, Cochin, Georgia;
+    text-decoration: none;
+    list-style: none;
+    font-size: large;
+    
+}
+
+.symbol_verre{
+    width: 50px;
+    height: 60px;
+    filter: invert(100%) saturate(0);
+}
+.verre{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+
+}
+nav{
+    position: fixed;
+     width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1%;
+    color: white;
+    align-items: center;
+    background-color: #f50c0006;
+    justify-content: space-evenly;
+    box-shadow: 5px 1px 20px black;
+   
+    
+   
+    
+}
+.shaif{
+    margin: 0 auto;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 25%;
+ 
+    
+}
+nav button{
+    width: 7vw;
+    height: 4vh;
+    padding: 1vh 1vw;
+    background-color: #F56706;
+  color: white;
+    
+    border-radius: 8px;
+    border: none;
+margin-bottom: 1vh;
+}
+header{
+    background: url(image/background_compressé.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30%;
+    filter: hue-rotate(10deg);
+    
+}
+.text_header{
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma;
+    font-size: 70px;
+    font-weight: bold;
+
+}
+.recherche{
+    margin: 0 auto;
+    padding: 3vh 4vw;
+    background-color:  #00311E;
+   
+border-radius: 5px; 
+
+}
+.barre{
+    height: 6vh;
+    width: 18vw;
+    border: none;
+    
+
+    
+}
+.dish{
+    background-color: white;
+   padding-right: 1vw;
+    border-radius: 5px;
+}
+.search_button{
+    height: 4vh;
+    background-color: #F56706;
+    width: 5vw;
+    border: none;
+    border-radius: 5px;
+}
+*/
+.gauche{
+    background-color: aqua;
+    width: 15%;
+    height: 1000px;
+    position: fixed;
+}
+.droite{
+    background-color: beige;
+    width: 85%;
+    height: 1000px;
+    position: relative;
+    left: 15%;
+    
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.gauche nav{
+    display: flex;
+flex-direction: column;
+gap: 12vh;
+text-align: center;
+
+}
+nav a{
+    background-color: black;
+}
+@media screen and (max-width:600px){
+    
+}
